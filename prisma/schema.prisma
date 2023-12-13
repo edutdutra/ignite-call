@@ -12,6 +12,7 @@ model User {
   username String @unique
   name     String
 
+  bio        String?
   email      String?   @unique
   avatar_url String?
   accounts   Account[]

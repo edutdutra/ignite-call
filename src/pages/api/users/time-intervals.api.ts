@@ -5,7 +5,6 @@ import {buildNextAuthOptions} from "@/src/pages/api/auth/[...nextauth].api";
 import z from 'zod'
 
 import {prisma} from "@/src/lib/prisma";
-import {setCookie} from "nookies";
 
 const timeIntervalsBodySchema = z.object({
     intervals: z.array(z.object({
