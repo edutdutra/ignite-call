@@ -58,10 +58,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     HAVING amount >= size
   `
 
-
     const blockedDates = blockedDatesRaw.map(item => item.date)
-
-    console.log('SALVE => ', blockedDatesRaw)
 
     return res.json({blockedWeekDays, blockedDates})
 }
